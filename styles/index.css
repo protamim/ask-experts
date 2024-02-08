@@ -1,0 +1,170 @@
+/* ================================================
+By Default styles for Mobile devices 
+================================================ */
+/* Top bar */
+.top-bar {
+    background-color: var(--primary-3);
+    padding: 12px 0;
+}
+.top-bar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 12px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+.top-bar .time {
+    color: var(--secondary-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+.top-bar .time span {
+    font-size: 12px;
+}
+.top-bar .location {
+    display: none;
+}
+.top-bar .social-icons {
+    color: var(--secondary-1);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 6px;
+}
+.top-bar .social-icons li {
+    transition: opacity 0.4s ease-in-out;
+    font-size: 18px;
+}
+.top-bar .social-icons li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* ------------------------------------------
+Header 
+--------------------------------------------*/
+.header {
+    background-color: #2f2f2f;
+    padding: 0.87rem 0;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.625rem;
+}
+.header .logo img {
+    width: 7rem;
+}
+.header .option-btn {
+    color: var(--secondary-2);
+    font-size: 1.6rem;
+    transition: opacity 0.4s ease-in-out;
+}
+.header .option-btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.header .nav-wrapper {
+    display: none;
+}
+.header .header-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+Styles for Large Mobile devices 
+================================================ */
+@media screen and (min-width: 545px) {
+    /* Top bar */
+    .top-bar .location{
+        display: flex;
+    }
+    .top-bar .social-icons {
+        column-gap: 10px;
+    }
+    .top-bar .social-icons li {
+       font-size: 22px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+Styles for Tablet devices 
+================================================ */
+
+
+
+
+
+
+
+
+
+/* ================================================
+Styles for Laptop Devices
+================================================ */
+@media screen and (min-width: 1024px) {
+    /* Top bar */
+    .top-bar .wrapper {
+        justify-content: start;
+        column-gap: 2.87rem;
+    }
+    .top-bar .time span {
+        font-size: 0.87rem;
+    }
+    .top-bar .time i {
+        font-size: 1.2rem;
+    }
+    .top-bar .social-icons {
+        margin-left: auto;
+    }
+    .top-bar .social-icons li {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+Styles for Desktop and Large screeens
+================================================ */
+
+
+
+
+
