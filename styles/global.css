@@ -35,3 +35,10 @@ body {
         padding: 0 1.25rem;
     }
 }
+
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}

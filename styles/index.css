@@ -69,6 +69,7 @@ Header
     color: var(--secondary-2);
     font-size: 2rem;
     transition: opacity 0.4s ease-in-out;
+    display: block;
 }
 .header .option-btn:hover {
     opacity: 0.5;
@@ -241,7 +242,7 @@ Styles for Desktop and Large screeens
 ================================================ */
 @media screen and (min-width: 1280px) {
     /* Header */
-    .header .option-btn, .header #close {
+    .header .option-btn {
         display: none;
     }
     .header .nav-wrapper {
