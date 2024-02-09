@@ -9,8 +9,18 @@ humberger.addEventListener("click", function(){
 });
 
 closeBar.addEventListener("click", function(){
-    humberger.classList.add("block");
+    humberger.style.display= "block";
     closeBar.style.display = "none";
     navWrapper.style.left = "-40rem";
 });
 
+const breakPoints = ()=> {
+    if(innerWidth > 1279){
+        humberger.style.display = "none";
+        closeBar.style.display = "none";
+        console.log(`Now window width is: ${innerWidth}`);
+    }else{
+        humberger.style.display= "block";
+    }
+}
+window.addEventListener("resize", breakPoints);

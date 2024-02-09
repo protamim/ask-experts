@@ -19,7 +19,10 @@ ul, li, ol {
 p {
     font-size: 0.75rem;
 }
-
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--secondary-2);
