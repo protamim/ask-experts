@@ -45,3 +45,8 @@ body {
 .block {
     display: block;
 }
+.lead {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 0.857rem;
+}
