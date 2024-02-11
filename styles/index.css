@@ -271,9 +271,6 @@ Home about
   flex-direction: column;
   row-gap: 3rem;
 }
-.home-about .about-wrapper .about-left {
-  /* position: relative; */
-}
 .home-about .about-wrapper .about-left .sub-title {
   font-size: 0.77rem;
   background-color: var(--primary-1);
@@ -395,9 +392,58 @@ Home about
   font-size: 0.8287rem;
 }
 /* ------------------------------------------
-Home about
+Home Services Section
 --------------------------------------------*/
-
+.home-service {
+  padding: 2rem 0;
+  background-color: var(--secondary-1);
+}
+.home-service .top {
+  text-align: center;
+}
+.home-service .top .sub-title {
+  margin: 0.687rem auto;
+  background-color: var(--primary-2);
+  color: var(--secondary-2);
+}
+.home-service .top .heading-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  max-width: 22rem;
+}
+.home-service .service-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.home-service .service-wrapper .card {
+ background-color: var(--gray-400);
+ border-radius: 0.457rem;
+ padding: 1.5rem 0.987rem;
+ transition: background-color 300ms ease-in-out;
+}
+.home-service .service-wrapper .card .icon {
+  margin-bottom: 1.2rem;
+  max-width: max-content;
+}
+.home-service .service-wrapper .card .title {
+  margin-bottom: 0.67rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-3);
+}
+.home-service .service-wrapper .card .info {
+  max-width: 18rem;
+}
+.home-service .service-wrapper .card:hover {
+  background-color: var(--primary-3);
+  color: var(--secondary-2);
+  cursor: pointer;
+}
+.home-service .service-wrapper .card:hover .title {
+  color: var(--secondary-2);
+}
 /* ------------------------------------------
 Home about
 --------------------------------------------*/
@@ -420,6 +466,22 @@ Styles for Large Mobile devices
   .home-about .about-wrapper {
     justify-content: center;
     align-items: center;
+  }
+  /* Home Service Section */
+  .home-service .service-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1.6rem;
+    row-gap: 1.9rem;
+  }
+  .home-service .service-wrapper .card {
+    text-align: center;
+    
+  }
+  .home-service .service-wrapper .card .info {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -484,6 +546,11 @@ Styles for Laptop Devices
   /* Home About */
   .home-about .about-wrapper {
     column-gap: 4rem;
+  }
+  /* Home Service Section */
+  .home-service .top .heading-title {
+    max-width: 29rem;
+    margin-bottom: 2.5rem;
   }
 }
 
