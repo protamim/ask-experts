@@ -92,6 +92,14 @@ body {
 .card .info {
   max-width: 18rem;
 }
+.card:hover {
+  background-color: var(--primary-3);
+  color: var(--secondary-2);
+  cursor: pointer;
+}
+.card:hover .title {
+  color: var(--secondary-2);
+}
 .info {
     max-width: 18rem;
 }

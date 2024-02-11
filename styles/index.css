@@ -489,6 +489,10 @@ Home Process Section
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 50%;
+  transition: opacity 300ms ease-in-out;
+}
+.home-process .process-wrapper .process-left .step-wrapper .step:hover .number {
+  opacity: 0.8;
 }
 .home-process
   .process-wrapper
@@ -532,10 +536,136 @@ Home Process Section
   column-gap: 1.2rem;
   row-gap: 1.6rem;
 }
-
+.home-process .process-wrapper .process-right .card-wrapper .card:hover .icon{
+  background-color: transparent;
+}
 /* ------------------------------------------
-Home about
+Home Image Gallary Section
 --------------------------------------------*/
+.home-gallery {
+  background: url("/assets/home/gallery-pattern.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25rem;
+  background-color: var(--primary-3);
+}
+.home-gallery .top {
+  display: flex;
+  column-gap: 1.12rem;
+  padding-top: 4rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.home-gallery .top .top-left .sub-title {
+  color: var(--secondary-2);
+  background-color: var(--primary-2);
+}
+.home-gallery .top .top-left .heading-title {
+  color: var(--secondary-2);
+  font-size: 1.11rem;
+  font-weight: 500;
+}
+.home-gallery .top .top-left {
+  flex-basis: 65%;
+}
+.home-gallery .top .top-right {
+  flex-basis: 30%;
+}
+.home-gallery .top .top-right .primary-btn{
+  background-color: var(--primary-1);
+  display: block;
+  font-size: 0.679rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.45rem 0.5rem;
+  color: var(--primary-3);
+  max-width: max-content;
+  margin-left: auto;
+  transition: all 300ms ease-in-out;
+}
+.home-gallery .top .top-right .primary-btn:hover {
+    background-color: var(--secondary-2);
+    color: var(--primary-2);
+}
+.home-gallery .gallery-wrapper {
+  background-color: var(--secondary-2);
+  padding: 1.2rem 0.75rem;
+  border-radius: 0.457rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.1rem;
+  row-gap: 1.8rem;
+  justify-content: center;
+}
+.home-gallery .gallery-wrapper .gallery-item {
+  position: relative;
+  max-width: max-content;
+  margin: 0 auto;
+}
+.home-gallery .gallery-wrapper .gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(14, 13, 13, 0.6803);
+  border-radius: 0.699rem;
+  transition: width 250ms ease-in-out;
+}
+.home-gallery .gallery-wrapper .gallery-item .content-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 310ms ease-in-out;
+}
+.home-gallery .gallery-wrapper .gallery-item .content-area .title {
+  color: var(--secondary-2);
+  font-weight: 500;
+  font-size: 0.858rem;
+  margin-bottom: 0.457rem;
+  margin-left: 0.474rem;
+}
+.home-gallery .gallery-wrapper .gallery-item .content-area .sub-title {
+  background-color: transparent;
+  padding: 0;
+  color: var(--primary-1);
+  text-transform: capitalize;
+  margin-left: 0.474rem;
+  font-weight: 400;
+  font-size: 0.6687rem;
+}
+.home-gallery .gallery-wrapper .gallery-item .addition {
+  position: absolute;
+  right: 0.745rem;
+  top: 0.54rem;
+  color: var(--primary-3);
+  background-color: var(--primary-1);
+  height: 1.8rem;
+  width: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  transform: scale(0);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.home-gallery .gallery-wrapper .gallery-item .addition:hover {
+  background-color: var(--secondary-2);
+}
+.home-gallery .gallery-wrapper .gallery-item:hover::before {
+  width: 100%;
+}
+.home-gallery .gallery-wrapper .gallery-item:hover .addition{
+ transform: scale(1);
+}
+.home-gallery .gallery-wrapper .gallery-item:hover .content-area{
+  transform: scale(1);
+}
 /* ------------------------------------------
 Home about
 --------------------------------------------*/
@@ -609,6 +739,11 @@ Styles for Tablet devices
   .home-process .process-wrapper .process-left .step-wrapper {
     margin-top: 4rem;
   }
+  /* Home Image Gallery Section */
+  .home-gallery .top .top-left .heading-title {
+    font-size: 1.6rem;
+    max-width: max-content;
+  }
 }
 
 /* ================================================
@@ -658,6 +793,32 @@ Styles for Laptop Devices
   /* Home Process Section */
   .home-process {
     padding: 8rem 0;
+  }
+  /* Home Image Gallary Section */
+  .home-gallery .gallery-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .home-gallery .top .top-left .heading-title {
+    max-width: 40.135rem;
+  }
+  .home-gallery .top .top-right .primary-btn {
+    font-size: 0.89rem;
+    padding: 0.75rem 0.87rem;
+    border-radius: 1.5rem;
+  }
+  .home-gallery .gallery-wrapper .gallery-item .content-area {
+    bottom: 0.27rem;
+    left: 0.87rem;
+  }
+  .home-gallery .gallery-wrapper .gallery-item .content-area .title {
+    font-size: 1.1rem;
+  }
+  .home-gallery .gallery-wrapper .gallery-item .content-area .sub-title {
+    font-size: 0.769rem;
+  }
+  .home-gallery .gallery-wrapper .gallery-item .addition {
+    top: 1rem;
+    right: 1rem;
   }
 }
 
