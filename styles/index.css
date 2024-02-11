@@ -313,9 +313,9 @@ Home about
   margin-top: 2rem;
 }
 .home-about .about-wrapper .about-left .counter-wrapper .vertical-line {
-    width: 1px;
-    height: 4.2rem;
-    border-left: 1px solid gray;
+  width: 1px;
+  height: 4.2rem;
+  border-left: 1px solid gray;
 }
 
 .home-about .about-wrapper .about-left .counter-wrapper .counter {
@@ -347,44 +347,44 @@ Home about
 }
 
 .home-about .about-wrapper .about-right {
-    background-color:transparent;
-    position: relative;
-    z-index: 2;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
 }
-.home-about .about-wrapper .about-right .bg-pattern{
+.home-about .about-wrapper .about-right .bg-pattern {
   max-width: 10rem;
   position: absolute;
   left: -1rem;
   z-index: -1;
   bottom: -2rem;
 }
-.home-about .about-wrapper .about-right .image-wrapper{
+.home-about .about-wrapper .about-right .image-wrapper {
   max-width: 26rem;
   display: block;
 }
 .home-about .about-wrapper .about-right .market-wrapper {
-    background: var(--secondary-2);
-    max-width: max-content;
-    display: flex;
-    align-items: center;
-    column-gap: 0.457rem;
-    padding: 0.78rem 0.87rem;
-    border-radius: 0.872rem;
-    box-shadow: 0px 6px 12px 1px rgba(14, 13, 13, 0.1803);
-    position: absolute;
-    bottom: -4rem;
-    left: 0;
+  background: var(--secondary-2);
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  column-gap: 0.457rem;
+  padding: 0.78rem 0.87rem;
+  border-radius: 0.872rem;
+  box-shadow: 0px 6px 12px 1px rgba(14, 13, 13, 0.1803);
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
 }
-.home-about .about-wrapper .about-right .market-wrapper .exp-volume{
- width: 4.375rem;
- height: 4.375rem;
- border: 3px solid var(--primary-2);
- border-radius: 50%;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 1.2rem;
- font-weight: 700;
+.home-about .about-wrapper .about-right .market-wrapper .exp-volume {
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 3px solid var(--primary-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .home-about .about-wrapper .about-right .market-wrapper h5 {
   max-width: 5rem;
@@ -418,10 +418,10 @@ Home Services Section
   row-gap: 2rem;
 }
 .home-service .service-wrapper .card {
- background-color: var(--gray-400);
- border-radius: 0.457rem;
- padding: 1.5rem 0.987rem;
- transition: background-color 300ms ease-in-out;
+  background-color: var(--gray-400);
+  border-radius: 0.457rem;
+  padding: 1.5rem 0.987rem;
+  transition: background-color 300ms ease-in-out;
 }
 .home-service .service-wrapper .card .icon {
   margin-bottom: 1.2rem;
@@ -444,6 +444,101 @@ Home Services Section
 .home-service .service-wrapper .card:hover .title {
   color: var(--secondary-2);
 }
+/* ------------------------------------------
+Home Process Section
+--------------------------------------------*/
+.home-process {
+  background-color: var(--secondary-2);
+  padding: 3rem 0;
+}
+.home-process .process-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.home-process .process-wrapper .process-left .sub-title {
+  background-color: var(--primary-2);
+  color: var(--secondary-2);
+}
+.home-process .process-wrapper .process-left .para {
+  max-width: 26rem;
+}
+.home-process .process-wrapper .process-left .step-wrapper {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  max-width: max-content;
+}
+.home-process .process-wrapper .process-left .step-wrapper > * {
+  border-top: 1px solid var(--gray-400);
+  padding-top: 1.2rem;
+}
+.home-process .process-wrapper .process-left .step-wrapper .step {
+  display: flex;
+  justify-content: start;
+  column-gap: 0.879rem;
+}
+.home-process .process-wrapper .process-left .step-wrapper .step .number {
+  background-color: var(--primary-1);
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50%;
+}
+.home-process
+  .process-wrapper
+  .process-left
+  .step-wrapper
+  .step
+  .content-wrapper
+  .title {
+  margin-bottom: 0.41rem;
+}
+.home-process
+  .process-wrapper
+  .process-left
+  .step-wrapper
+  .step
+  .content-wrapper
+  .info {
+  max-width: 18rem;
+}
+.home-process .process-wrapper .process-left .step-wrapper .step-2 .number {
+  background-color: var(--primary-2);
+  color: var(--secondary-2);
+}
+.home-process .process-wrapper .process-left .step-wrapper .step-3 .number {
+  background-color: var(--primary-3);
+  color: var(--secondary-2);
+}
+/* Process Right */
+.home-process .process-wrapper .process-right .heading-title {
+   max-width: 21rem;
+}
+.home-process .process-wrapper .process-right .para-first {
+  margin-bottom: 0.87rem;
+}
+.home-process .process-wrapper .process-right .para-second {
+  margin-bottom: 2rem;
+}
+.home-process .process-wrapper .process-right .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.2rem;
+  row-gap: 1.6rem;
+}
+
+/* ------------------------------------------
+Home about
+--------------------------------------------*/
+/* ------------------------------------------
+Home about
+--------------------------------------------*/
 /* ------------------------------------------
 Home about
 --------------------------------------------*/
@@ -477,7 +572,6 @@ Styles for Large Mobile devices
   }
   .home-service .service-wrapper .card {
     text-align: center;
-    
   }
   .home-service .service-wrapper .card .info {
     margin-left: auto;
@@ -505,6 +599,15 @@ Styles for Tablet devices
   }
   .home-about .about-wrapper .about-right .bg-pattern {
     bottom: -6rem;
+  }
+  /* Home Process Section */
+  .home-process .process-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+  .home-process .process-wrapper .process-left .step-wrapper {
+    margin-top: 4rem;
   }
 }
 
@@ -551,6 +654,10 @@ Styles for Laptop Devices
   .home-service .top .heading-title {
     max-width: 29rem;
     margin-bottom: 2.5rem;
+  }
+  /* Home Process Section */
+  .home-process {
+    padding: 8rem 0;
   }
 }
 
