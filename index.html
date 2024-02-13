@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Boxicons css cdn -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -402,8 +407,8 @@
     <!-- Home Process End -->
     <!-- Home Gallary Pattern Start -->
     <section class="home-gallery">
-      <div class="container">
-        <div class="top">
+      <div class="background">
+        <div class="top container">
           <div class="top-left">
             <h4 class="sub-title">Process</h4>
             <h2 class="heading-title">
@@ -415,6 +420,8 @@
             <a href="#" class="primary-btn"> More Gallery </a>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="gallery-wrapper">
           <div class="gallery-item">
             <img src="assets/home/gallery-1.png" alt="gallery" />
@@ -484,9 +491,161 @@
       </div>
     </section>
     <!-- Home Gallary Pattern End -->
+    <!-- Home Counter Start -->
+    <section class="home-counter">
+      <div class="container">
+        <div class="counter-wrapper">
+          <div class="counter">
+            <h4 class="number">1138 <span>+</span></h4>
+            <p class="title">Successful Work</p>
+          </div>
+          <div class="counter">
+            <h4 class="number">908 <span>+</span></h4>
+            <p class="title">Team member</p>
+          </div>
+          <div class="counter">
+            <h4 class="number">258 <span>+</span></h4>
+            <p class="title">Happy Customers</p>
+          </div>
+          <div class="counter">
+            <h4 class="number">564 <span>+</span></h4>
+            <p class="title">Creative Idea</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Counter End -->
 
+    <!-- Home Client Feedback Start -->
+    <section class="home-feedback">
+      <div class="container">
+        <h4 class="sub-title">Client Feedback</h4>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper feedback-wrapper">
+            <div class="feedback swiper-slide">
+              <h3 class="comment">
+                <span class="grey">
+                  “With their forward-thinking approach, this consulting firm propelled our company to new heights. 
+                </span>
+                <span class="black">  Their tailored strategies unlocked opportunities we didn't know existed, leading to significant growth.  </span>
+                <span class="grey">
+                  A game-changer for any organization aiming to stay ahead of the curve.”
+                </span>
+              </h3>
+              <div class="client-info">
+                <img
+                  class="image"
+                  src="assets/home/client-1.png"
+                  alt="feedback"
+                />
+                <h5 class="name">Kathleen Smith</h5>
+                <h6 class="designation">Web Designer</h6>
+              </div>
+            </div>
+            <div class="feedback swiper-slide">
+              <h3 class="comment">
+                <span class="grey">
+                  “This consulting firm delivered beyond expectations. 
+                </span>
+                <span class="black"> Their team's expertise streamlined our processes, resulting in tangible improvements in our operations.  </span>
+                <span class="grey">
+                  Highly recommended for businesses seeking impactful solutions.”
+                </span>
+              </h3>
+              <div class="client-info">
+                <img
+                  class="image"
+                  src="assets/home/client-2.jpg"
+                  alt="feedback"
+                />
+                <h5 class="name">Jeffrey Keenan</h5>
+                <h6 class="designation">Photographer</h6>
+              </div>
+            </div>
+            <div class="feedback swiper-slide">
+              <h3 class="comment">
+                <span class="grey">
+                  “We were impressed by the promptness and reliability of this consulting firm. 
+                </span>
+                <span class="black"> From initial consultations to implementation, their team was always available, addressing our concerns promptly.  </span>
+                <span class="grey">
+                  A trustworthy partner for navigating complex business challenges.”
+                </span>
+              </h3>
+              <div class="client-info">
+                <img
+                  class="image"
+                  src="assets/home/client-3.jpg"
+                  alt="feedback"
+                />
+                <h5 class="name">Mandy R. Haydon</h5>
+                <h6 class="designation">Banker investigator</h6>
+              </div>
+            </div>
+            <div class="feedback swiper-slide">
+              <h3 class="comment">
+                <span class="grey">
+                  “Working with this consulting firm was like having a team of strategic visionaries on board. 
+                </span>
+                <span class="black"> Their insights into market trends and consumer behavior were invaluable in shaping our long-term strategy.  </span>
+                <span class="grey">
+                  A must-have ally for companies aiming for sustained success.”
+                </span>
+              </h3>
+              <div class="client-info">
+                <img
+                  class="image"
+                  src="assets/home/client-4.jpg"
+                  alt="feedback"
+                />
+                <h5 class="name">Caroline N. Larsen</h5>
+                <h6 class="designation">Corporate trainer</h6>
+              </div>
+            </div>
+            <div class="feedback swiper-slide">
+              <h3 class="comment">
+                <span class="grey">
+                  “This consulting firm stands out for their unwavering commitment to delivering results.  
+                </span>
+                <span class="black"> Their data-driven approach and attention to detail ensured every recommendation translated into measurable outcomes.  </span>
+                <span class="grey">
+                  A top choice for companies prioritizing tangible results and ROI.”
+                </span>
+              </h3>
+              <div class="client-info">
+                <img
+                  class="image"
+                  src="assets/home/client-5.jpg"
+                  alt="feedback"
+                />
+                <h5 class="name">Gary C. Mason</h5>
+                <h6 class="designation">Office aide</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Next and Prev Buttons -->
+          <button class="pnext-btn next">
+            Next
+            <span class="icon"><i class="bx bx-right-arrow-alt"></i></span>
+          </button>
+          <button class="pnext-btn prev">
+            <span class="icon"><i class="bx bx-left-arrow-alt"></i></span>
+            Prev
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Client Feedback End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Boxicons cdn -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Vanilla JS -->
     <script src="js/pureScript.js"></script>
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
   </body>
 </html>
