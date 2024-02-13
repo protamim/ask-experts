@@ -120,3 +120,41 @@ body {
     background-color: var(--secondary-2);
     color: var(--primary-2);
 }
+.main-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  background-color: var(--secondary-2);
+  border-radius: 0.5rem;
+  padding: 0.345rem 0.5rem;
+  text-decoration: none;
+  color: var(--primary-3);
+  z-index: 2;
+}
+.main-btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  background-color: var(--primary-1);
+  border-radius: 0.5rem;
+  transition: width 300ms ease-in-out;
+  z-index: -1;
+}
+.main-btn:hover:before {
+  width: 100%;
+}
+.main-btn span {
+  background-color: var(--primary-1);
+  border-radius: 0.125rem;
+  padding: 0.1rem 0.2rem;
+}
+.main-btn p {
+  font-size: 0.75rem;
+}
+.grey {
+  color: grey;
+}
