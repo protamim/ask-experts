@@ -1027,8 +1027,116 @@ Home Blog Section
   color: var(--secondary-2);
 }
 /* ------------------------------------------
-Home about
+Home Contact Form
 --------------------------------------------*/
+.home-contact {
+  background-color: var(--secondary-2);
+  padding: 3.5rem 0;
+}
+.home-contact .contact-wrapper {
+  display: grid;
+  row-gap: 3.5rem;
+}
+.home-contact .contact-wrapper .left .info {
+  margin-bottom: 1.5rem;
+}
+.home-contact .contact-wrapper .left .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.6rem;
+}
+.home-contact .contact-wrapper .left .info-wrapper .item {
+  display: flex;
+  column-gap: 0.872rem;
+  align-items: center;
+}
+.home-contact .contact-wrapper .left .info-wrapper .item .icon {
+  background-color: rgba(255, 204, 74, 0.349);
+  padding: 0.457rem;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 1.2rem;
+  color: var(--primary-1);
+}
+.home-contact .contact-wrapper .left .info-wrapper .item .number span {
+  font-size: 0.797rem;
+  color: var(--primary-3);
+}
+.home-contact .contact-wrapper .left .info-wrapper .item .number h5 {
+  font-size: 0.89rem;
+  color: black;
+}
+.home-contact .contact-wrapper .left .info-wrapper .time .icon {
+  background-color: rgba(78, 175, 78, 0.397);
+  color: var(--primary-2);
+}
+.home-contact .contact-wrapper .left .info-wrapper .address .icon {
+  background-color: var(--gray-400);
+  color: black;
+}
+.home-contact .contact-wrapper .right .form-wrapper {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.home-contact .contact-wrapper .right .form-wrapper .form-control {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.687rem;
+}
+.home-contact .contact-wrapper .right .form-wrapper .form-control label {
+  font-size: 0.87rem;
+  color: var(--primary-3);
+}
+.home-contact .contact-wrapper .right .form-wrapper .form-control input {
+  height: 2.99rem;
+  padding-left: 0.69rem;
+  font-size: 0.87rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--gray-400);
+  outline: none;
+  transition: border 200ms ease;
+  width: 100%;
+}
+.home-contact .contact-wrapper .right .form-wrapper .form-control input:focus {
+  border: 2px solid var(--primary-2);
+}
+.home-contact .contact-wrapper .right .form-wrapper .form-control .message {
+  width: 100%;
+  min-height: 5rem;
+  border: 2px solid var(--gray-400);
+  outline: none;
+  resize: vertical;
+  border-radius: 0.872rem;
+  padding: 0.35rem 0.2rem 0.3rem 0.6rem;
+  transition: border 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  appearance: inherit;
+  font-size: 0.87rem;
+}
+.home-contact
+  .contact-wrapper
+  .right
+  .form-wrapper
+  .form-control
+  .message:focus-visible {
+  border: 2px solid var(--primary-2);
+}
+.home-contact .contact-wrapper .right .form-wrapper .btn {
+  border: none;
+  background-color: var(--primary-3);
+  color: var(--secondary-2);
+  max-width: max-content;
+  padding: 0.87rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.87rem;
+  transition: all 250ms ease-in-out;
+}
+.home-contact .contact-wrapper .right .form-wrapper .btn:hover {
+  background-color: var(--primary-1);
+  color: var(--primary-3);
+  cursor: pointer;
+}
 /* ------------------------------------------
 Home about
 --------------------------------------------*/
@@ -1106,6 +1214,12 @@ Styles for Large Mobile devices
   }
   .home-blog .blog-wrapper {
     row-gap: 4.8rem;
+  }
+  /* Home Contact Form */
+  .home-contact .contact-wrapper {
+    row-gap: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.25rem;
   }
 }
 
@@ -1220,6 +1334,19 @@ Styles for Tablet devices
   .home-blog .top .left .heading-title {
     font-size: 1.952rem;
     max-width: 31rem;
+  }
+  /* Home Contact Form */
+  .home-contact .contact-wrapper .right .form-wrapper {
+    row-gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.05rem;
+  }
+  .home-contact
+    .contact-wrapper
+    .right
+    .form-wrapper
+    .form-control:nth-child(5) {
+    grid-column: 1 / span 2;
   }
 }
 
@@ -1364,6 +1491,21 @@ Styles for Laptop Devices
   }
   .home-blog .blog-wrapper .blog .info-wrapper .publish-date {
     font-size: 0.87rem;
+  }
+  /* Home Contact Form */
+  .home-contact .contact-wrapper {
+    grid-template-columns: repeat(3, minmax(0, auto));
+    column-gap: 4.5rem;
+  }
+  .home-contact .contact-wrapper .right {
+    grid-column: 2 / span 3;
+  }
+  .home-contact .contact-wrapper .left .heading-title {
+    font-size: 2.1rem;
+    max-width: none;
+  }
+  .home-contact .contact-wrapper .right .form-wrapper .form-control .message {
+    min-height: 7rem;
   }
 }
 
