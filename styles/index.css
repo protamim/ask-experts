@@ -1138,12 +1138,128 @@ Home Contact Form
   cursor: pointer;
 }
 /* ------------------------------------------
-Home about
+Footer
 --------------------------------------------*/
-/* ------------------------------------------
-Home about
---------------------------------------------*/
-
+.footer {
+  position: relative;
+  padding-top: 4.5rem;
+  background: url(/assets/home/footer-bg.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(1.557rem);
+  -webkit-backdrop-filter: blur(1.557rem);
+  background-color: rgb(0 0 0 / 66%);
+  z-index: -1;
+}
+.footer .footer-wrapper .logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.36rem;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  margin-bottom: 1.5rem;
+}
+.footer .footer-wrapper .logo img {
+  max-width: max-content;
+}
+.footer .footer-wrapper .logo span {
+  color: var(--secondary-2);
+  font-size: 0.89rem;
+}
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center;
+  align-content: center;
+  column-gap: 0.78rem;
+  row-gap: 1.4rem;
+  padding: 2rem 0;
+}
+.footer .footer-wrapper .links .title {
+  color: var(--secondary-2);
+  padding-bottom: 0.879rem;
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 1.26rem;
+  font-weight: 600;
+}
+.footer .footer-wrapper .links .title::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--primary-1);
+  bottom: 0;
+}
+.footer .footer-wrapper .links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.49rem;
+}
+.footer .footer-wrapper .links ul li a {
+  text-decoration: none;
+  color: var(--secondary-2);
+  font-weight: 400;
+  font-size: 0.89rem;
+  transition: opacity 250ms ease-in-out;
+}
+.footer .footer-wrapper .links ul li a:hover {
+  opacity: 0.6;
+}
+.footer .footer-wrapper .address p {
+  color: var(--secondary-2);
+  max-width: none;
+  margin-bottom: 1.6rem;
+  font-size: 0.89rem;
+}
+.footer .footer-wrapper .address .book {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--secondary-2);
+  color: var(--primary-3);
+  padding: 0.87rem;
+  border-radius: 1.5rem;
+  font-size: 0.78rem;
+  border: 1px solid transparent;
+  transition: all 250ms ease-in-out;
+}
+.footer .footer-wrapper .address .book:hover {
+  background-color: transparent;
+  color: var(--secondary-2);
+  border: 1px solid var(--primary-2);
+}
+.footer .copyright-area {
+  padding-bottom: 0.787rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--gray-400);
+  color: var(--secondary-2);
+ 
+}
+.footer .copyright-area p {
+  font-size: 0.87rem;
+  line-height: 1.6rem;
+}
+.footer .copyright-area a {
+  color: var(--primary-2);
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+  font-size: 0.87rem;
+}
+.footer .copyright-area a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  color: var(--primary-1);
+}
 /* ================================================
 Styles for Large Mobile devices 
 ================================================ */
@@ -1220,6 +1336,13 @@ Styles for Large Mobile devices
     row-gap: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 2.25rem;
+  }
+  /* Footer */
+  .footer .footer-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .footer .footer-wrapper .logo {
+    grid-column: 1 / span 3;
   }
 }
 
@@ -1506,6 +1629,16 @@ Styles for Laptop Devices
   }
   .home-contact .contact-wrapper .right .form-wrapper .form-control .message {
     min-height: 7rem;
+  }
+  /* Footer */
+  .footer .footer-wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: space-between;
+  }
+  .footer .footer-wrapper .logo {
+    grid-column: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
